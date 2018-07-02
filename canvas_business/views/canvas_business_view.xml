@@ -14,20 +14,20 @@
                     <table width="100%" cellpadding="4" cellspacing="0">
 	<tr valign="top">
 		<td width="20%" bgcolor="#ffff99" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p align="center"><b>Partners Clave</b></p>
+			<p align="center"><b>Partners Key</b></p>
 		</td>
 		<td width="20%" bgcolor="#ff99ff" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p align="center"><b>Actividades Clave</b></p>
+			<p align="center"><b>Key Activities</b></p>
 		</td>
 		<td colspan="2" bgcolor="#ccffff" width="20%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p align="center"><b>Propuesta de Valor</b></p>
+			<p align="center"><b>Value proposal</b></p>
 		</td>
 		<td width="20%" bgcolor="#ffcc99" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p align="center"><b>Relación con Clientes</b></p>
+			<p align="center"><b>Relationship with Customers</b></p>
 		</td>
 		<td width="20%" bgcolor="#ccff99" style="border: 1px solid #000000; padding: 0.1cm">
-			<p align="center"><b>Segmentos de</b></p>
-			<p align="center"><b>Clientes</b></p>
+			<p align="center"><b>Segments of</b></p>
+			<p align="center"><b>customers</b></p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -49,10 +49,10 @@
 	</tr>
 	<tr valign="top">
 		<td width="20%"  bgcolor="#aea79f" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p><b>Recursos Claves</b></p>
+			<p><b>Key Resources</b></p>
 		</td>
 		<td width="20%" bgcolor="#ff8080" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p><b>Canales</b></p>
+			<p><b>Channels</b></p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -65,10 +65,10 @@
 	</tr>
 	<tr valign="top">
 		<td colspan="3" width="50%" bgcolor="#99ccff" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p><b>Estructura de Coste</b></p>
+			<p><b>Cost Structure</b></p>
 		</td>
 		<td colspan="3" width="50%" bgcolor="#ffd320" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
-			<p><b>Flujos de Ingresos</b></p>
+			<p><b>Income flows</b></p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -105,13 +105,13 @@
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
               <p class="oe_view_nocontent_create">
-                Presione para crear nuevo Registro</p>
+                Press to create new Record</p>
            </field>
     </record>
 
     <menuitem id="canvas_business"
         name="Canvas Business"
-        parent="sales_team.menu_sales"
+        parent="sale.menu_sale_config"
         sequence="34"
         action="action_scanvas_business" />
 

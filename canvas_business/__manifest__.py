@@ -22,28 +22,25 @@
 
 {
     'name': "Canvas Business MFH",
-    'version': '10.0.0.1.0',
-    'author': "Falcón Solutions",
+    'version': '11.0.0.1.0',
+    'author': 'Falcon Solutions SpA',
     'maintainer': 'Falcon Solutions',
     'website': 'http://www.falconsolutions.cl',
     'license': 'AGPL-3',
     'category': 'Partner',
     'summary': 'Business',
     'depends': [
-                'base',
+            'base',
                 'sale',
-                ],
+                'sales_team'
+    ],
     'description': """
 Canvas Business MFH
-=====================================================
-2-. Canvas Business MFH. \n
-=====================================================
-
 """,
     'data': [
-            'views/canvas_business_view.xml',
-            'security/ir.model.access.csv',
-            ],
+        'views/canvas_business_view.xml',
+        'security/ir.model.access.csv',
+    ],
     'demo': [],
     'test': [],
     'installable': True,
