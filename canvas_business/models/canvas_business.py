@@ -1,23 +1,45 @@
-# -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 from odoo import api, fields, models
 from odoo.exceptions import ValidationError
+
 
 class canvas_business(models.Model):
     _description = "canvas business"
     _name = 'canvas.business'
 
-    name = fields.Char('Nombre', translate=True )
-    texto = fields.Text('Texto', translate=True ,default='''Business model canvas, traducido como lienzo de modelo de negocio, es una plantilla de gestión estratégica para el desarrollo de nuevos modelos de negocio o documentar los ya existentes. Es un gráfico visual con elementos que describen propuesta de producto o de valor de la empresa, la infraestructura, los clientes y las finanzas. Ayuda a las empresas a alinear sus actividades mediante la ilustración de posibles compensaciones. El modelo de negocio del lienzo fue propuesto inicialmente por Alexander Osterwalder1​ sobre la base de su trabajo anterior sobre la ontología de los modelos de negocio. Desde la publicación de la obra de Osterwalder en 2008, han aparecido nuevos lienzos para nichos específicos, como el Lienzo Lean. Las descripciones formales del negocio se convierten en los bloques de construcción para sus actividades. Existen muchas diferentes conceptualizaciones de negocio; El trabajo de Osterwalder y tesis (2010, de 2004) proponen un modelo único de referencia basada en las similitudes de una amplia gama de conceptualizaciones de modelo de negocio. Con su diseño de la plantilla modelo de negocio, una empresa puede describir fácilmente su modelo de negocio.''')
+    name = fields.Char('Name', translate=True)
+    texto = fields.Text('Text', translate=True,
+                        default='''Business model canvas, translated as a business model canvas,
+        is a strategic management template for the development of new models of
+        business or document existing ones. It is a visual graphic with elements that
+        describe the product or value proposal of the company, the infrastructure,
+        Customers and finances. It helps companies to align their activities through
+        the illustration of possible compensations. The business model of the canvas was
+        initially proposed by Alexander Osterwalder1 on the basis of his work
+        previous on the ontology of business models. Since the publication of
+        the work of Osterwalder in 2008, new canvases have appeared for specific niches,
+        like the Lean Canvas. The formal descriptions of the business become the blocks
+        of construction for their activities. There are many different conceptualizations of
+        deal; The work of Osterwalder and thesis (2010, 2004) propose a unique model of
+        reference based on the similarities of a wide range of model conceptualizations
+        of business. With your business model template design, a company can describe
+        easily your business model.''')
 
-    partners_clave = fields.Text('Partners Clave', translate=True, default='¿Qué pueden hacer los partner mejor que tú o con un coste menor y , por tanto enriquecer tu modelo de negocio?')
-    actividades_clave = fields.Text('Actividades Clave', translate=True, default='¿Qué actividades clave hay que desarrollar en su modelo de negocio de que manera las llevas a cabo?')
-    propuesta_de_valor = fields.Text('Propuesta de Valor', translate=True, default='¿Qué problemas solucionamos?¿Qué necesidad satisfacemos?¿Qué beneficios aporta?')
-    relacion_con_clientes = fields.Text('Relación con Clientes', translate=True, default='¿Qué tipo de relaciones esperan tus clientes que establezcas y mantengas con ellos?')
-    segmentos_de_clientes = fields.Text('Segmentos de Clientes', translate=True, default='¿A quién nos dirigimos?¿Qué segmentos consideramos?¿Cuales son prioritarios?')
-    recursos_claves = fields.Text('Recursos Claves', translate=True, default='¿Qué recursos clave requiere tu modelo de negocio?')
-    canales = fields.Text('Canales', translate=True, default='¿A través de qué canales/medios contactarás y atenderás a tus clientes?')
-    estructura_de_coste = fields.Text('Estructura de Coste', translate=True, default='¿Cuál es la estructura de costes de tu modelo de negocio?')
-    flujos_de_ingresos = fields.Text('Flujos de Ingresos', translate=True, default='¿Qué valor están dispuestos a pagar tus clientes por tu solución y mediante qué formas de pago?¿Qué margenes obtengo?')
-
+    partners_clave = fields.Text('Partners Clave', translate=True,
+                                 default='What can partners do better than you or at a lower cost and, therefore, enrich your business model?')
+    actividades_clave = fields.Text('Key Activities', translate=True,
+                                    default='What key activities do you have to develop in your business model in what way do you carry them out?')
+    propuesta_de_valor = fields.Text('Value proposal', translate=True,
+                                     default='What problems do we solve? What need do we satisfy? What are the benefits?')
+    relacion_con_clientes = fields.Text('Relationship with Customers', translate=True,
+                                        default='What kind of relationships do your clients expect you to establish and maintain with them?')
+    segmentos_de_clientes = fields.Text('Customer Segments', translate=True,
+                                        default='Who do we target? Which segments do we consider? Which ones are priorities?')
+    recursos_claves = fields.Text('Key Resources', translate=True,
+                                  default='What key resources does your business model require?')
+    canales = fields.Text('Channels', translate=True,
+                          default='Through which channels / media will you contact and assist your customers?')
+    estructura_de_coste = fields.Text('Cost Structure', translate=True,
+                                      default='What is the cost structure of your business model?')
+    flujos_de_ingresos = fields.Text('Income flows', translate=True,
+                                     default='What value are your customers willing to pay for your solution and what forms of payment? What margins do I get?')
