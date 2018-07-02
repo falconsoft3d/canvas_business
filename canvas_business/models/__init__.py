@@ -1,2 +1,2 @@
-# -*- coding: utf-8 -*-
-import canvas_business
+
+from . import canvas_business
